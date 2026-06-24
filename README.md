@@ -6,7 +6,7 @@
 
 Reference implementations for the paired [`ai-infra-agentic-ai-engineer-learning`](https://github.com/ai-infra-curriculum/ai-infra-agentic-ai-engineer-learning) track.
 
-> **Status**: scaffolded by `aicg org bootstrap-role`. Module and project solutions arrive over subsequent autonomous cycles.
+> **Status**: ✅ Reference solutions complete for every module exercise. AI-assisted content under ongoing human review.
 
 ## Layout
 
