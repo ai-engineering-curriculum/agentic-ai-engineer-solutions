@@ -9,7 +9,7 @@
 ## 🎯 Overview
 
 This repository holds the reference implementations for the paired
-[`ai-infra-agentic-ai-engineer-learning`](https://github.com/ai-infra-curriculum/ai-infra-agentic-ai-engineer-learning)
+[`ai-infra-agentic-ai-engineer-learning`](https://github.com/ai-engineering-curriculum/agentic-ai-engineer-learning)
 track — the agentic rung of the AI Infrastructure Curriculum, covering how to
 build, evaluate, guard, and ship autonomous LLM agents.
 
@@ -72,7 +72,7 @@ completion map.
 
 ### For Self-Study
 
-1. **Start in the [learning repository](https://github.com/ai-infra-curriculum/ai-infra-agentic-ai-engineer-learning)** to understand the concepts and attempt each exercise from the stubs.
+1. **Start in the [learning repository](https://github.com/ai-engineering-curriculum/agentic-ai-engineer-learning)** to understand the concepts and attempt each exercise from the stubs.
 2. **Implement the exercise yourself first** — the reference is most valuable as a comparison, not a starting point.
 3. **Compare your approach** against the matching solution folder here.
 4. **Read the walkthrough** to understand the trade-offs, pitfalls, and acceptance-criteria mapping.
@@ -94,7 +94,7 @@ completion map.
 
 This solutions repository is the counterpart to the hands-on track:
 
-- **[ai-infra-agentic-ai-engineer-learning](https://github.com/ai-infra-curriculum/ai-infra-agentic-ai-engineer-learning)** — learning materials, exercise stubs, and project briefs.
+- **[ai-infra-agentic-ai-engineer-learning](https://github.com/ai-engineering-curriculum/agentic-ai-engineer-learning)** — learning materials, exercise stubs, and project briefs.
 
 ---
 
