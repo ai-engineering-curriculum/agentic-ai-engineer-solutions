@@ -51,8 +51,8 @@ edit shifts the file, every later line number from the last read is wrong, and
 nothing detects it. An exact-match edit names the text it expects to find. If
 that text isn't there, or appears twice, the edit fails, and the error says
 what to do: "old_string matches 2 places. Include more surrounding lines so it
-matches one, or set replace_all." If `old_string` starts with something like
-`    12\t`, the error adds a hint: the model has copied `read_file`'s line-number
+matches one, or set replace_all." If `old_string` starts with a line-number
+prefix (spaces, digits, then a tab), the error adds a hint: the model has copied `read_file`'s line-number
 prefix. That is the most common way a model's edit misses.
 
 The confirmation is the edited lines plus three lines of context on each side,
@@ -2617,8 +2617,8 @@ def test_harness_runs_without_git_and_warns(ws):
 
 ## Common pitfalls
 
-- **Showing line numbers, then matching them.** If the model copies `   12\t`
-  into `old_string`, the edit can't match. Say in the tool description that the
+- **Showing line numbers, then matching them.** If the model copies the line-number prefix
+  (spaces, digits, a tab) into `old_string`, the edit can't match. Say in the tool description that the
   prefix isn't part of the file, and detect it in the error.
 - **Forgetting to re-record after your own write.** If `edit_file` doesn't
   update the ledger, the model's second edit fails with "changed since you read
