@@ -11,9 +11,10 @@ four parts of it: Gate (allow, review, or deny an action for an agent),
 Guard PII tokenization, Guard injection scanning, and event ingestion (the
 events feed the agent's trust scores and audit trail). The harness talks to
 it through the SDK's core client, `veriswarm.VeriSwarmClient`. The SDK also
-ships framework adapters under `veriswarm.adapters`; this solution doesn't
-use them. In 0.5.0 they import a module that doesn't exist, and the core
-client is all a custom harness needs.
+ships framework adapters under `veriswarm.adapters` (they work from 0.5.1;
+in 0.5.0 they failed on import). This solution doesn't use them: they fail
+open on API errors, and a custom harness should choose its fail mode per
+tool, so it builds its own policy and filters on the core client.
 
 **The loop gets three seams, all off by default.** `loop.py` adds three
 fields to `Harness`:
@@ -2148,9 +2149,11 @@ Every criterion is tested offline with `FakeTrust` and `ScriptedModel`.
 - **Installing per-run state on a reusable harness.** If the PII session
   and the event buffer are created once at build time, the second run
   reuses them. Create them in `run`.
-- **Using `veriswarm.adapters` in 0.5.0.** They import a `veriswarm_client`
-  module that isn't in the package and fail on import. The core
-  `VeriSwarmClient` has everything this exercise needs.
+- **Reaching for `veriswarm.adapters` in a custom harness.** They're built
+  for framework agents and fail open on API errors, which hides the fail-mode
+  decision this exercise asks you to make. (In 0.5.0 they also failed on
+  import; that's fixed in 0.5.1.) The core `VeriSwarmClient` has everything
+  this exercise needs.
 
 ## Verification
 
