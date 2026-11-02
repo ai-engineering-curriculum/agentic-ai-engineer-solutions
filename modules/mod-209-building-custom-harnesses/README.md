@@ -1,7 +1,7 @@
 # mod-209-building-custom-harnesses — Solutions
 
 Reference solutions for *Building a Custom Agent Harness*. Exercise-01 builds
-the core harness package; exercises 02–06 each extend that same package on
+the core harness package; exercises 02–07 each extend that same package on
 their own, listing exactly which exercise-01 files they add or change. Every
 solution runs and is fully tested offline with scripted fake models (no API key);
 live runs against the Anthropic API, Docker, or an MCP server are opt-in where
@@ -29,3 +29,9 @@ the exercise calls for them.
 - [exercise-06-observability-replay-and-shipping](exercise-06-observability-replay-and-shipping/README.md)
   — Redacted JSONL run logs, OpenTelemetry spans, record-and-replay tests, and a
   headless CLI with JSON output and exit codes.
+- [exercise-07-trust-layer-veriswarm](exercise-07-trust-layer-veriswarm/README.md)
+  — VeriSwarm as a trust layer: Gate decisions as a permission policy with
+  caching and per-tool fail modes, result and input filter stages, PII
+  tokenization with rehydration at write boundaries, injection scanning, and
+  batched content-free behavioral events. Tested offline against a fake client
+  and checked against the real `veriswarm` 0.5 SDK's signatures.

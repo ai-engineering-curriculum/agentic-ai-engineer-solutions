@@ -65,8 +65,8 @@ Solution counts below reflect the exercises with completed reference walkthrough
 | [mod-206 — Guardrails & Safety Implementation](./modules/mod-206-guardrails-implementation/README.md) | 4 |
 | [mod-207 — Productionizing Agents](./modules/mod-207-productionizing-agents/README.md) | 4 |
 | [mod-208 — Harness Engineering](./modules/mod-208-harness-engineering/README.md) | 3 |
-| [mod-209 — Building a Custom Agent Harness](./modules/mod-209-building-custom-harnesses/README.md) | 6 |
-| **Total** | **38** |
+| [mod-209 — Building a Custom Agent Harness](./modules/mod-209-building-custom-harnesses/README.md) | 7 |
+| **Total** | **39** |
 
 Two capstone projects round out the track:
 
